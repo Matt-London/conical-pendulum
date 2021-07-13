@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conical Pendulum</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/extern.js" defer></script>
+    <script src="assets/func.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="input">
+            <form id="input-form">
+                <label for="mass-input">Mass (kg):</label><br>
+                <input type="text" id="mass-input" name="mass-input" value="1"><br>
+
+                <label for="length-input">String length (m):</label><br>
+                <input type="text" id="length-input" name="length-input" value="1"><br>
+
+                <label for="g-input">Gravity (m/s^2):</label><br>
+                <input type="text" id="g-input" name="g-input" value="9.81"><br>
+
+            </form>
+
+        </div>
+
+        <div id="animation">
+            <div id="stage">
+                <!-- https://stackoverflow.com/questions/19382872/how-to-connect-html-divs-with-lines -->
+                <svg id="string-svg" class="string" height="650" width="350"><line id="string-line" class="string" x1="50" y1="50" x2="314" y2="990" stroke="black"/></svg>
+                <div id="anchor"></div>
+                <div id="path-container">
+                    <div id="path"></div>
+                    <img id="ball" src="images/ball.png" alt="Image of ball">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

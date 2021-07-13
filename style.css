@@ -1,0 +1,103 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+#body {
+    position: relative;
+}
+
+#container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 50%;
+    height: 75%;
+    border: 2px solid black;
+}
+
+#input {
+    display: flex;
+    height: 100%;
+    width: 27%;
+    float: left;
+    justify-content: center;
+    padding-left: 3%;
+
+}
+
+#input-form {
+    margin-top: 20px;
+}
+
+input[type=text] {
+    border: 1px solid black;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 16px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+}
+
+label {
+    font-size: 20px;
+}
+
+#animation {
+    height: 100%;
+    width: 70%;
+    float: right;
+}
+
+#stage {
+    position: relative;
+    top: 50%;
+    left: 12.5%;
+    transform: translateY(-50%);
+    border: 2px solid green;
+    height: 75%;
+    width: 325px;
+
+}
+
+#anchor {
+    position: relative;
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: 50%;
+    top: 10%;
+
+}
+
+#path-container {
+    position: relative;
+    top: 60%;
+    width: 250px;
+    height: 150px;
+    left: calc((100% - 250px) / 2);
+}
+
+
+#path {
+    position: absolute;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    border-radius: 75%;
+    left: calc((100% - 200px) / 2);
+
+}
+
+#ball {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.string {
+    position: absolute;
+}
